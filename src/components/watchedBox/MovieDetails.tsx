@@ -53,7 +53,7 @@ export default function MovieDetails({SelectedId,handleCloseMovie,handleAddWatch
       try {
         setIsLoading(true);
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=${KEY}&i=${SelectedId}`
+          `https://www.omdbapi.com/?apikey=${KEY}&i=${SelectedId}`
         );
         if (!res.ok)
           throw new Error(

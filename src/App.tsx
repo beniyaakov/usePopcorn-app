@@ -37,7 +37,7 @@ export default function App() {
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState<string | null>(null);
   
-  const url:string =`http://www.omdbapi.com/?apikey=${KEY}&s=${query}`
+  const url:string =`https://www.omdbapi.com/?apikey=${KEY}&s=${query}`
 
 
   const [watched, setWatched]  = useLocalStorageState<MovieDataType[]>([],"watched")
